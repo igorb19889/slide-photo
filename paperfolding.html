@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS PEPER FOLDING</title>
+    <style>
+        body{
+   /* background-color: #336;*/
+   background-image: url(image-byuvgbo6.png);
+   background-repeat: repeat;
+}
+.paper-effect{
+    width: 1000px;
+    height: 600px;
+    border: 10px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    perspective: 1000px;
+    
+    
+}
+.paper-effect > div{
+    width: 198px;
+    height: 598px;
+    display: inline-block;
+    float: left;
+    background-image: url(https://cdcgaming.com/wp-content/uploads/2022/10/Vermont-statehouse-capitol-e1658075324637-1000x600.jpg);
+    z-index: 1000;
+    position: relative;
+}
+
+.paper-effect > div:nth-child(2){
+    background-position: -200px 0px;
+    
+    
+}
+
+
+.paper-effect > div:nth-child(3){
+    background-position: -400px 0;
+    
+}
+.paper-effect > div:nth-child(4){
+    background-position: -600px 0;
+    
+}
+.paper-effect > div:nth-child(5){
+    background-position: -800px 0;
+    
+}
+
+
+
+.paper-effect:hover > div:nth-child(2){
+    background-position: -200px 0;
+    transform: 
+    translateX(-12px)
+    rotateY(-39deg)
+    scaleY(1.07);
+    position: absolute;
+    left:163px;
+    transition: 0.1s;
+}
+
+
+.paper-effect:hover > div:nth-child(3){
+    background-position: -400px 0;
+    transform: 
+    translateX(40px)
+    rotateY(40deg)
+    scaleY(1.07);    
+    position: absolute;
+    left:263px;
+    transition: 0.1s;
+}
+.paper-effect:hover > div:nth-child(4){
+    background-position: -600px 0;
+    transform:
+    translateX(-49px)
+    rotateY(-40deg)
+    scaleY(1.07);
+    position: absolute;
+    left:500px;
+    transition: 0.1s;
+}
+.paper-effect:hover > div:nth-child(5){
+    background-position: -800px 0;
+    transform:
+    translateX(37px)
+    rotateY(40deg)
+    scaleY(1.07);
+    position: absolute;
+    left:565px;
+    transition: 0.1s;
+    
+}
+    </style>
+</head>
+<body>
+<div class="paper-effect">
+    <div class="1"></div>
+    <div class="2"></div>
+    <div class="3"></div>
+    <div class="4"></div>
+    <div class="5"></div>
+</div>
+
+    
+</body>
+</html>
